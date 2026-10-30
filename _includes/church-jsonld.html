@@ -1,0 +1,30 @@
+{%- assign s = site.data.site -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "name": {{ s.name | jsonify }},
+  "alternateName": {{ s.name_ko | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }},
+  "image": {{ '/assets/img/campus-exterior.jpg' | absolute_url | jsonify }},
+  "description": {{ site.description | strip | jsonify }},
+  "telephone": "+1-818-835-1121",
+  "email": {{ s.email | jsonify }},
+  "foundingDate": "1997-05",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": {{ s.address.street | jsonify }},
+    "addressLocality": {{ s.address.city | jsonify }},
+    "addressRegion": {{ s.address.state | jsonify }},
+    "postalCode": {{ s.address.zip | jsonify }},
+    "addressCountry": "US"
+  },
+  "hasMap": {{ s.map_url | jsonify }},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "name": "Sunday worship",
+    "dayOfWeek": "https://schema.org/Sunday",
+    "opens": {{ s.worship.time_24 | jsonify }}
+  }]
+}
+</script>

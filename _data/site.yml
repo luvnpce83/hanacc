@@ -1,0 +1,57 @@
+# Facts used across the site. Change a time, address or contact here and every page follows.
+
+name: Hana Church
+name_ko: 하나교회
+since: 1997
+
+address:
+  street: 9100 Tujunga Canyon Blvd
+  city: Tujunga
+  state: CA
+  zip: "91042"
+  short: 9100 Tujunga Canyon Blvd, Tujunga
+  full: 9100 Tujunga Canyon Blvd, Tujunga, CA 91042
+map_url: https://www.google.com/maps/search/?api=1&query=9100+Tujunga+Canyon+Blvd%2C+Tujunga%2C+CA+91042
+
+phone: (818) 835-1121
+phone_link: "+18188351121"
+email: hanachristianchurch@gmail.com        # church
+email_ufic: hanaufic@gmail.com              # UFIC ministries (Food Bank, One Table)
+
+worship:
+  time: "11:00 AM"
+  time_short: "11 AM"
+  time_24: "11:00"
+  time_ko: 오전 11시
+bible_study:
+  time: "1:00 PM"
+  time_short: "1 PM"
+  time_ko: 오후 1시
+
+food_bank:
+  day: Fridays
+  hours: "12–2 PM"
+  hours_long: "12:00 to 2:00 PM"
+  hours_ko: 낮 12시~2시
+  volunteers_arrive: "10:30 AM"
+
+give:
+  zelle: hanaufic@gmail.com
+  venmo: "@hanaunity"
+  venmo_url: https://venmo.com/u/hanaunity
+  paypal: hanaufic@gmail.com
+  note: Gifts are received by Unity of Friends in Christ (UFIC), the nonprofit that cares for our campus and ministries.
+
+ufic_note: Food Bank and One Table Art Studio are ministries of Unity of Friends in Christ (UFIC), the nonprofit that cares for our campus.
+
+# Public Google Calendar ID (looks like ...@group.calendar.google.com).
+# Leave empty to show "For upcoming events, call or email us." on the News page.
+calendar_id: ""
+
+pastors:
+  - title: Pastor
+    name: Sung Hye Nahm
+  - title: Pastor
+    name: Young Kang
+  - title: Founding Pastor
+    name: Sungdo Kang

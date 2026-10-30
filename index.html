@@ -1,0 +1,94 @@
+---
+layout: default
+description: Hana Church in Tujunga, California. Worship with us on Sundays at 11 AM, with Bible study at 1 PM. Food Bank on Fridays, One Table Art Studio and construction missions.
+church_jsonld: true
+---
+{%- assign s = site.data.site -%}
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">Tujunga, California · Since {{ s.since }}</p>
+      <h1>Go and do likewise.</h1>
+      <p class="hero-cite">Luke 10:37</p>
+      <p class="hero-body">For almost thirty years, Hana Church has tried to live by these words of Jesus: opening the Bible together, sharing what we have with our neighbors, and building with our own hands. Every generation has a place here.</p>
+      <div class="button-row">
+        <a class="btn btn-primary" href="{{ '/visit/' | relative_url }}">Worship with us · Sundays {{ s.worship.time_short }}</a>
+        <a class="btn btn-outline" href="{{ '/ko/' | relative_url }}" lang="ko">한국어 안내</a>
+      </div>
+      <p class="hero-note">Bible study at {{ s.bible_study.time_short }} · {{ s.address.short }}</p>
+    </div>
+    <figure class="hero-photo">
+      <img src="{{ '/assets/img/campus-exterior.jpg' | relative_url }}" width="960" height="540" fetchpriority="high"
+           alt="Our campus in Tujunga: a long tan building with white-framed windows under tall trees, with patio chairs in the shade.">
+    </figure>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="beyond-sunday">
+  <div class="container">
+    <h2 id="beyond-sunday">Beyond Sunday</h2>
+    <ul class="card-grid">
+      <li class="card card-link">
+        {% include icon.html name="food" px="36" class="card-icon" %}
+        <h3><a href="{{ '/food-bank/' | relative_url }}">Food Bank</a></h3>
+        <p class="card-meta">{{ s.food_bank.day }} · {{ s.food_bank.hours }}</p>
+        <p>Free groceries for our neighbors, right here on campus. A partner agency of the Los Angeles Regional Food Bank.</p>
+        <span class="card-more" aria-hidden="true">Learn more {% include icon.html name="arrow" px="18" %}</span>
+      </li>
+      <li class="card card-link">
+        {% include icon.html name="art" px="36" class="card-icon" %}
+        <h3><a href="{{ '/one-table/' | relative_url }}">One Table Art Studio</a></h3>
+        <p class="card-meta">Weekday afternoons · Saturdays</p>
+        <p>Art classes for children and young people with developmental disabilities, taught by art educators. Ask us about joining.</p>
+        <span class="card-more" aria-hidden="true">Learn more {% include icon.html name="arrow" px="18" %}</span>
+      </li>
+      <li class="card card-link">
+        {% include icon.html name="build" px="36" class="card-icon" %}
+        <h3><a href="{{ '/missions/' | relative_url }}">Construction Missions</a></h3>
+        <p class="card-meta">For more than twenty years</p>
+        <p>We have helped build more than fifty churches, schools and shelters with partners in Baja California, Mexico.</p>
+        <span class="card-more" aria-hidden="true">Learn more {% include icon.html name="arrow" px="18" %}</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="band band-green" aria-labelledby="hana-means-one">
+  <div class="container split split-photo-first">
+    <figure class="split-photo">
+      <img src="{{ '/assets/img/sanctuary-entrance.jpg' | relative_url }}" width="1280" height="720" loading="lazy"
+           alt="The sanctuary entrance: concrete steps with railings lead up to a white-columned porch and open doors, with flowering shrubs and trees on either side.">
+    </figure>
+    <div class="split-text">
+      <h2 id="hana-means-one">Hana (<span lang="ko">하나</span>) means one.</h2>
+      <blockquote class="verse">
+        <p>“…for all of you are one in Christ Jesus.”</p>
+        <footer>Galatians 3:28</footer>
+      </blockquote>
+      <p>In May 1997, five people gathered for worship. The habits of those early years still shape us: read the Bible slowly and let it speak first. Give, and then forget that you gave. Count honest work as prayer. Children who grew up on our mission trips now join them as young adults, and every generation worships side by side.</p>
+      <p><a class="btn btn-light" href="{{ '/story/' | relative_url }}">Read our story</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="pastors">
+  <div class="container">
+    <h2 id="pastors">Pastors</h2>
+    {% include pastors.html %}
+  </div>
+</section>
+
+<section class="band band-sand" aria-labelledby="give">
+  <div class="container split">
+    <div class="split-text">
+      <h2 id="give">Give</h2>
+      <p>Thank you for sharing in this work. You can give in any of these three ways.</p>
+      <p>{{ s.give.note }}</p>
+      <p><a class="text-link" href="{{ '/give/' | relative_url }}">More about giving</a></p>
+    </div>
+    <div>
+      {% include give-methods.html %}
+    </div>
+  </div>
+</section>

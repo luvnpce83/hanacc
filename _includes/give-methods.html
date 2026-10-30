@@ -1,0 +1,15 @@
+{%- assign g = site.data.site.give -%}
+<dl class="give-box">
+  <div class="give-row">
+    <dt>Zelle</dt>
+    <dd><span class="give-id">{{ g.zelle }}</span></dd>
+  </div>
+  <div class="give-row">
+    <dt>Venmo</dt>
+    <dd><a class="give-id" href="{{ g.venmo_url }}">{{ g.venmo }}</a></dd>
+  </div>
+  <div class="give-row">
+    <dt>PayPal</dt>
+    <dd><span class="give-id">{{ g.paypal }}</span></dd>
+  </div>
+</dl>
