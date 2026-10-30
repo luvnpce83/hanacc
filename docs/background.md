@@ -6,16 +6,18 @@ Facts and constraints gathered on 2026-10-29 for planning the website. This is s
 
 The Hana community at 9100 Tujunga Canyon Blvd, Tujunga, CA:
 
-- **Hana Christian Church**: a congregation of the Christian Church (Disciples of Christ), Pacific Southwest Region, incorporated April 2025. It ministers primarily in English for the next generation of Korean Americans, with Korean heritage woven in. Lead Pastor: Rev. Young Kang. Ministry Intern: Joshua Nahm.
+- **Hana Christian Church**: a congregation of the Christian Church (Disciples of Christ), Pacific Southwest Region, incorporated April 2025. It ministers primarily in English for the next generation of Korean Americans, with Korean heritage woven in. Pastor Sung Hye Nahm and Pastor Young Kang lead the church together. Ministry Intern: Joshua Nahm (not listed on the site unless confirmed).
 - **Unity of Friends in Christ (UFIC)**: the nonprofit that owns the campus and runs the community ministries (Food Bank, One Table Art Studio).
-- The umbrella name "hana-cc" was chosen to read as both Christian Church and Community Center. The final domain is not settled yet, so use relative links only.
+- **Public name** (decided 2026-10-29): "Hana Church" (하나교회). The site does not use "Hana Christian Church", does not name the denomination, and does not call the church "English-first". Both pastors are titled "Pastor"; Sungdo Kang is listed as Founding Pastor.
+- **Domain**: hanachristianchurch.org, registered at Squarespace Domains through 2027-11-09. Use relative links only.
 
 ## Facts that may be used
 
 Anything a page needs that is not here gets `[확인 필요]` and goes on the open-questions list. Nothing is invented.
 
 - **Address**: 9100 Tujunga Canyon Blvd, Tujunga, CA 91042. **Phone**: (818) 835-1121. **Email**: hanachristianchurch@gmail.com (church), hanaufic@gmail.com (UFIC ministries).
-- **Sunday worship**: one main service shared by the Hana community. Time `[확인 필요]`. Preaching rotation: 1st and 3rd Sundays Rev. Nam `[full name 확인 필요]`, 2nd and 5th Sundays Rev. Sungdo Kang, 4th Sunday Rev. Young Kang.
+- **Sunday worship**: one main service shared by the Hana community at 11:00 AM, followed by Bible study at 1:00 PM. Preaching rotation: 1st and 3rd Sundays Pastor Sung Hye Nahm, 2nd and 5th Sundays Rev. Sungdo Kang, 4th Sunday Pastor Young Kang.
+- **Giving**: Zelle hanaufic@gmail.com, Venmo @hanaunity, PayPal hanaufic@gmail.com. These are UFIC accounts that the church also uses.
 - **Roots**: the Hana community began in May 1997, when five people gathered for the first worship service of Hana Korean Methodist Church. For more than twenty years it has run a weekly food pantry and short-term construction missions in Baja California, Mexico, helping build more than fifty churches, schools and shelters. Hana Christian Church was planted from this community to carry it into the next generation.
 - **Mission statement** (verbatim): "Confessing Jesus as the Christ, we seek to cultivate a faith community where Korean-Americans of all generations flourish together, bridging cultural and linguistic divides in pursuit of Christ-like discipleship. As a diaspora church, we transform our hybrid cultural heritage into a source of spiritual depth and prophetic witness. Rooted in scripture, nurtured through prayer, and expressed in compassionate action, our journey forms disciples who embody Christ's love in daily life, build authentic community, and work for reconciliation and justice in a fragmented world."
 - **Vision, four pillars**:
@@ -25,21 +27,15 @@ Anything a page needs that is not here gets `[확인 필요]` and goes on the op
   4. Shared stewardship and growing toward financial independence.
 - **Food Bank** (UFIC): a partner agency of the Los Angeles Regional Food Bank. Food distribution every Friday, 12:00 to 2:00 pm, on the campus. Volunteers arrive about 10:30 am. Free for neighbors.
 - **One Table Art Studio** (UFIC): an art program for children and young people with developmental disabilities, led by art educators. Small weekday-afternoon and Saturday classes. Families ask about joining by email. Class times and student names are not published.
-- **Sermons**: Rev. Young Kang already publishes sermons as a static site at `https://luvnpce83.github.io/lectio/` (repo `luvnpce83/lectio`, one folder per post with `index.html`). He wants sermons to be published on this website too.
+- **Sermons**: not on this site (decided 2026-10-29). The posts at `https://luvnpce83.github.io/lectio/` are Pastor Young Kang's Bible study writings and stay there.
 
 ## Constraints
 
 - This repository is public. Never put on the site: names or photos of members, children or students; giving or bank details; internal documents, board matters, finances or other internal church business.
 - Hosting: GitHub Pages from this repository, so the first address is `https://luvnpce83.github.io/hanacc/`.
 - File names in English.
-- Rev. Kang is not a web developer and is very busy. He wants it simple to keep up, and he wants to add a sermon by pasting a finished manuscript into a Claude Code session.
+- Rev. Kang is not a web developer and is very busy. He wants it simple to keep up: news and photos are added through a Claude Code session, and events through a shared Google Calendar.
 
 ## Open questions for planning
 
-- Sunday worship time, and Rev. Nam's full English name.
-- Who the site is mainly for: newcomers to the church, neighbors who need the food bank, families looking at One Table, partners and funders, or all of these. This sets the home page.
-- Language balance: English only, English with short Korean sections, or full Korean pages.
-- Sermons: move the lectio posts here and retire lectio, or keep lectio as his personal blog and show sermons from all preachers here.
-- Photos: which campus or ministry photos can be used (no people, or only with permission).
-- Later additions: giving, events calendar, Bible study articles, volunteer sign-up, contact form.
-- Domain: when and which (hana-cc), and who will register it.
+Answered on 2026-10-29. Decisions are in `plan.md` §0, and the facts still to confirm are in `plan.md` §9.
