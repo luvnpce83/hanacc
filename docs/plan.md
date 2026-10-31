@@ -18,7 +18,7 @@
 | 헌금 | 1차부터 넣는다. Zelle `hanaufic@gmail.com`, Venmo `@hanaunity`, PayPal `hanaufic@gmail.com`. UFIC 계정이고 교회가 함께 쓰므로 사이트에 "UFIC가 받는다"고 밝힌다. 계좌·라우팅 번호는 쓰지 않는다. |
 | 디자인 | A안의 색과 글꼴에 새 순서를 쓴다(캔버스의 "A+ · Revised"): 첫 화면(예배 버튼) → 사역 3개 바로가기 → Hana means one → 목회자 → 헌금. |
 | 로고 | 지금은 글자(Hana Church · 하나교회). Hana CC 로고 이미지는 쓰지 않는다. |
-| Squarespace 시안 | 11/8 플랜 만료 전에 백업하고, 플랜은 갱신하지 않는다. |
+| Squarespace 시안 | 2026-10-29 끝남: 견본뿐이라 기록만 남김(Drive). 플랜은 갱신하지 않는다. |
 | 업데이트 | 일정은 캘린더 편집자, 소식·사진은 Claude 세션. 매주 할 일은 없다. |
 
 ## 1. 사이트 지도
