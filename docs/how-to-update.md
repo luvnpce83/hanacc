@@ -1,6 +1,6 @@
 # 사이트 고치는 법
 
-Hana Church 사이트(`https://luvnpce83.github.io/hanacc/`)를 고치는 방법이다. 고치는 일은 이 저장소(hanacc)의 Claude Code 세션에 말로 부탁하면 되고, 이 문서는 그때 Claude와 사람이 함께 보는 기준이다.
+Hana Church 사이트(`https://hanachristianchurch.org`)를 고치는 방법이다. 고치는 일은 이 저장소(hanacc)의 Claude Code 세션에 말로 부탁하면 되고, 이 문서는 그때 Claude와 사람이 함께 보는 기준이다.
 
 - 고친 내용이 `main` 브랜치에 들어가면 GitHub Pages가 1~2분 안에 사이트를 다시 만든다.
 - 잘 됐는지는 저장소의 **Actions** 탭에서 "pages build and deployment"가 초록색인지 보고, 휴대폰으로 사이트를 열어 확인한다.
@@ -101,11 +101,7 @@ News & Events 페이지는 `calendar_id`가 비어 있으면 "For upcoming event
 - 들여쓰기는 스페이스 두 칸이다. 탭을 쓰지 않는다.
 - 문장 자체(예: 첫 화면 문구, Our Story 내용)는 각 페이지 파일(`index.html`, `visit.md`, `story.md` 등)에 있다.
 
-## 참고: 도메인을 연결한 뒤
+## 참고: 도메인
 
-`hanachristianchurch.org`를 연결하면 `_config.yml`에서 두 줄을 바꾼다(`plan.md` §7의 3단계).
-
-```yaml
-url: "https://hanachristianchurch.org"
-baseurl: ""
-```
+- 사이트 주소는 `hanachristianchurch.org`이다. 저장소의 `CNAME` 파일과 `_config.yml`의 `url`이 이 주소를 가리킨다. `CNAME` 파일은 지우지 않는다.
+- 도메인 등록과 DNS는 Squarespace Domains에 있다(등록 만료 2027-11-09, 자동 갱신). DNS에는 GitHub Pages용 A 4줄(`185.199.108–111.153`), `www` CNAME(`luvnpce83.github.io`), GitHub 도메인 확인 TXT가 있다. 이 기록들은 지우지 않는다.

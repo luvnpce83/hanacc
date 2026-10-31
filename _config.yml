@@ -6,10 +6,9 @@ description: >-
   with Bible study at 1 PM. Since 1997.
 lang: en
 
-# Before the domain is connected: url is the GitHub Pages address and baseurl is /hanacc.
-# After hanachristianchurch.org is connected: url: "https://hanachristianchurch.org" and baseurl: "".
-url: "https://luvnpce83.github.io"
-baseurl: "/hanacc"
+# The site lives at the custom domain in CNAME, so baseurl is empty.
+url: "https://hanachristianchurch.org"
+baseurl: ""
 
 permalink: /news/:year/:month/:day/:title/
 timezone: America/Los_Angeles
