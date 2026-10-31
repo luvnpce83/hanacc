@@ -1,6 +1,6 @@
 # hanacc
 
-Hana Church(하나교회) 웹사이트. GitHub Pages가 Jekyll로 빌드한다: https://luvnpce83.github.io/hanacc/
+Hana Church(하나교회) 웹사이트. GitHub Pages가 Jekyll로 빌드한다: https://hanachristianchurch.org
 
 - `docs/plan.md`: 결정, 사이트 지도, 디자인, 기술 구조
 - `docs/background.md`: 쓸 수 있는 사실과 지킬 것
