@@ -1,0 +1,35 @@
+{%- assign url = page.url -%}
+{%- assign in_ministries = false -%}
+{%- if url == '/food-bank/' or url == '/one-table/' or url == '/missions/' -%}{%- assign in_ministries = true -%}{%- endif -%}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-name">{{ site.data.site.name }}</span>
+      <span class="brand-ko" lang="ko">{{ site.data.site.name_ko }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul class="nav-list">
+        <li><a href="{{ '/visit/' | relative_url }}"{% if url == '/visit/' %} aria-current="page"{% endif %}>Visit</a></li>
+        <li><a href="{{ '/about/' | relative_url }}"{% if url == '/about/' or url == '/story/' %} aria-current="page"{% endif %}>About</a></li>
+        <li class="has-sub">
+          <button class="sub-toggle{% if in_ministries %} is-current{% endif %}" type="button" aria-expanded="false" aria-controls="nav-ministries">
+            Ministries
+            <svg class="chevron" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul id="nav-ministries" class="sub-list">
+            <li><a href="{{ '/food-bank/' | relative_url }}"{% if url == '/food-bank/' %} aria-current="page"{% endif %}>Food Bank</a></li>
+            <li><a href="{{ '/one-table/' | relative_url }}"{% if url == '/one-table/' %} aria-current="page"{% endif %}>One Table Art Studio</a></li>
+            <li><a href="{{ '/missions/' | relative_url }}"{% if url == '/missions/' %} aria-current="page"{% endif %}>Construction Missions</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ '/news/' | relative_url }}"{% if url == '/news/' or page.collection == 'posts' %} aria-current="page"{% endif %}>News</a></li>
+        <li><a href="{{ '/give/' | relative_url }}"{% if url == '/give/' %} aria-current="page"{% endif %}>Give</a></li>
+        <li><a href="{{ '/ko/' | relative_url }}" lang="ko"{% if url == '/ko/' %} aria-current="page"{% endif %}>한국어</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

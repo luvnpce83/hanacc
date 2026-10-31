@@ -1,0 +1,58 @@
+---
+title: News & Events
+permalink: /news/
+description: Upcoming events and news from Hana Church in Tujunga, California, plus our weekly schedule.
+lede: What is happening at Hana, week by week.
+---
+{%- assign s = site.data.site -%}
+
+<section class="page-section" aria-labelledby="every-week">
+  <h2 id="every-week">Every week</h2>
+  <ul class="time-list time-list-compact">
+    <li>
+      <p class="time">Sunday {{ s.worship.time }}</p>
+      <div><h3>Worship</h3><p>Communion at an open table. Everyone is welcome.</p></div>
+    </li>
+    <li>
+      <p class="time">Sunday {{ s.bible_study.time }}</p>
+      <div><h3>Bible study</h3></div>
+    </li>
+    <li>
+      <p class="time">Friday {{ s.food_bank.hours }}</p>
+      <div><h3><a href="{{ '/food-bank/' | relative_url }}">Food Bank</a></h3><p>Free groceries for our neighbors.</p></div>
+    </li>
+  </ul>
+</section>
+
+<section class="page-section" aria-labelledby="upcoming">
+  <h2 id="upcoming">Upcoming events</h2>
+  {%- if s.calendar_id and s.calendar_id != "" %}
+  <div class="calendar">
+    <iframe title="Hana Church events calendar"
+            src="https://calendar.google.com/calendar/embed?src={{ s.calendar_id | url_encode }}&amp;ctz=America%2FLos_Angeles&amp;mode=AGENDA&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0"
+            loading="lazy"></iframe>
+  </div>
+  {%- else %}
+  <div class="notice">
+    <p>For upcoming events, call or email us.</p>
+    <p class="contact-inline"><a href="tel:{{ s.phone_link }}">{{ s.phone }}</a> <span aria-hidden="true">·</span> <a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+  </div>
+  {%- endif %}
+</section>
+
+<section class="page-section" aria-labelledby="news">
+  <h2 id="news">News</h2>
+  {%- if site.posts.size > 0 %}
+  <ul class="post-list">
+    {%- for post in site.posts %}
+    <li>
+      <p class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time></p>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      {%- if post.description %}<p>{{ post.description }}</p>{% else %}<p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p class="notice">There is no news here yet. Please check back soon.</p>
+  {%- endif %}
+</section>

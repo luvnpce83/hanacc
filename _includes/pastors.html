@@ -1,0 +1,10 @@
+{%- assign s = site.data.site -%}
+<ul class="pastor-list">
+  {%- for p in s.pastors %}
+  <li class="pastor-card">
+    <p class="pastor-title">{{ p.title }}</p>
+    <p class="pastor-name">{{ p.name }}</p>
+  </li>
+  {%- endfor %}
+</ul>
+<p class="pastor-contact">Want to talk with a pastor? Call <a href="tel:{{ s.phone_link }}">{{ s.phone }}</a> or email <a href="mailto:{{ s.email }}">{{ s.email }}</a>.</p>

@@ -1,0 +1,30 @@
+{%- assign s = site.data.site -%}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="footer-name">{{ s.name }} <span lang="ko">{{ s.name_ko }}</span></p>
+      <p><a href="{{ s.map_url }}">{{ s.address.street }}<br>{{ s.address.city }}, {{ s.address.state }} {{ s.address.zip }}</a></p>
+    </div>
+    <div class="footer-contact">
+      <p><span class="footer-label">Phone</span> <a href="tel:{{ s.phone_link }}">{{ s.phone }}</a></p>
+      <p><span class="footer-label">Church</span> <a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+      <p><span class="footer-label">Food Bank &amp; One Table</span> <a href="mailto:{{ s.email_ufic }}">{{ s.email_ufic }}</a></p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <ul>
+        <li><a href="{{ '/visit/' | relative_url }}">Visit</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+        <li><a href="{{ '/story/' | relative_url }}">Our Story</a></li>
+        <li><a href="{{ '/news/' | relative_url }}">News &amp; Events</a></li>
+        <li><a href="{{ '/give/' | relative_url }}">Give</a></li>
+        <li><a href="{{ '/ko/' | relative_url }}" lang="ko">한국어</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="footer-note">
+      <p>{{ s.ufic_note }}</p>
+      <p>© {{ site.time | date: "%Y" }} {{ s.name }}</p>
+    </div>
+  </div>
+</footer>

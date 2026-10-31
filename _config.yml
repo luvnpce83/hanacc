@@ -1,0 +1,37 @@
+# Hana Church website (GitHub Pages builds this with Jekyll)
+title: Hana Church
+tagline: A church in Tujunga, California
+description: >-
+  Hana Church (하나교회) in Tujunga, California. Worship with us on Sundays at 11 AM,
+  with Bible study at 1 PM. Since 1997.
+lang: en
+
+# Before the domain is connected: url is the GitHub Pages address and baseurl is /hanacc.
+# After hanachristianchurch.org is connected: url: "https://hanachristianchurch.org" and baseurl: "".
+url: "https://luvnpce83.github.io"
+baseurl: "/hanacc"
+
+permalink: /news/:year/:month/:day/:title/
+timezone: America/Los_Angeles
+markdown: kramdown
+theme: null   # no GitHub Pages default theme; this site has its own layouts
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - docs
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      image: /assets/img/campus-exterior.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
