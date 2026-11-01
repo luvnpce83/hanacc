@@ -22,6 +22,7 @@ plugins:
 exclude:
   - docs
   - README.md
+  - CLAUDE.md
 
 defaults:
   - scope:
